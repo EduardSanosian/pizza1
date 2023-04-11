@@ -30,27 +30,8 @@
 
 
     <h1 class="text-center">Welkom bij Pizzeria Sopranos </h1>
-<div class="container">
-    <div class="row">
-    {% for product in products %}
-        <div class="card col-4">
-            <img src="/img/{{ product.image }}"
-                 class="image card-img-top img-fluid"
-            />
-            <div class="card-body">
-                <h5 class="card-title">
-                    {{ product.name }}
-                </h5>
-                <p class="card-body">
-                    €{{ product.price }}
-                </p>
-                <a href="/order/{{ product.id }}"><button class="btn btn-secondary">Bestel hier!</button></a>
-            </div>
-        </div>
-    {% endfor %}
-    </div>
-</div>
-    <div class="container-fluid bg-dark">
+
+    <div class="container-fluid bg-dark fixed-bottom">
         <footer class="row">
             <footer class="col-6 text-light text-center">
                 <p>
@@ -70,7 +51,7 @@
                     <a> restaurant sopranos</a> <br>
                     <a> Appelstraat 1</a> <br>
                     <a> 1111 AA fruit</a> <br>
-                    <a> sopranos@gmail.com</a> <br>
+                    <a>sopranos@gmail.com</a> <br>
                     <a> 06-12345678</a> <br>
 
                 </p>
